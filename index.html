@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <link rel="stylesheet" href="css/my_second_style.css" />
+    <title>CSS Part 2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <header class="text">
+      <h1>Farhana's CSS practice : Step 2</h1>
+    </header>
+
+    <h3>CSS Table</h3>
+    <p>
+      CSS Table Properties border- Sets all the border properties in one
+      declaration <br />
+
+      border-collapse Specifies whether or not table borders should be
+      collapsed<br />
+      border-spacing Specifies the distance between the borders of adjacent
+      cells
+    </p>
+    <br /><br />
+    <table id="table2">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+      </tr>
+      <tr>
+        <td>Farhana</td>
+        <td>Afrin</td>
+      </tr>
+      <tr>
+        <td>Mahfuz</td>
+        <td>Ali</td>
+      </tr>
+    </table>
+    <br />
+
+    caption-side Specifies the placement of a table caption<br />
+    empty-cells Specifies whether or not to display borders and background on
+    empty cells in a table<br />
+    <table class="ex2">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+      </tr>
+      <tr>
+        <td>Farhana</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Mahfuz</td>
+        <td>Ali</td>
+      </tr>
+    </table>
+    <br />
+    table-layout Sets the layout algorithm to be used for a table
+    <h3>CSS Display</h3>
+    <p>
+      The display property is the most important CSS property for controlling
+      layout.
+    </p>
+    <p>
+      display:(none/block/inline/inline-block) Specifies how an element should
+      be displayed visibility:(visible/hidden) Specifies whether or not an
+      element should be visible
+    </p>
+    <p>
+      Changing an inline element to a block element, or vice versa, can be
+      useful for making the page look a specific way, example of inline element
+      are
+    </p>
+    <ul>
+      <li><a href="/html/default.asp" target="_blank">span tag</a></li>
+      <li><a href="/css/default.asp" target="_blank">a tag</a></li>
+      <li><a href="/js/default.asp" target="_blank">img tag</a></li>
+    </ul>
+
+    <h3>CSS Position</h3>
+    <div class="relative">
+      Position:static/relative/fixed/absolute/sticky; used to specify the type
+      of positioning method used for an element.
+      <div class="absolute1">
+        This div element has position: absolute; left:350px means 350px away
+        from left border.
+      </div>
+      <div class="absolute2">
+        All css Positioning Properties are:
+        <ul>
+          <li>bottom</li>
+          <li>clip</li>
+          <li>left</li>
+          <li>position</li>
+          <li>right</li>
+          <li>top</li>
+          <li>z-index</li>
+        </ul>
+      </div>
+    </div>
+    <h3>CSS Max-width</h3>
+    <div class="ex2">
+      Using max-width instead of width, in this situation, will improve the
+      browser's handling of small windows. This is important when making a site
+      usable on small devices
+    </div>
+    <h3>CSS Overflow</h3>
+    <div class="overflow">
+      The overflow property specifies what should happen if content overflows an
+      element's box.
+      <p>
+        overflow/overflow-x/overflow-y:
+        visible|hidden|scroll|auto|initial|inherit;
+      </p>
+    </div>
+    <h3>CSS Float, clear, clearfix</h3>
+    <div class="clearfix">
+      <img
+        src="image/images.jpg"
+        alt=""
+        style="width: 170px; height: 170px; margin-right: 15px;"
+      />
+      <div class="box" style="background-color:#62f088"><b>float</b> <br />The float property can have one of the following values:<br />
+
+        left - The element floats to the left of its container<br />
+        right - The element floats to the right of its container<br />
+        none - The element does not float (will be displayed just where it occurs
+        in the text). This is default<br />
+        inherit - The element inherits the float value of its parent
+      </div>
+      <div class="box" style="background-color:#d4bdf2"><b>The clear Property</b> <br />The clear property can have one of the following values:none/left/right/both/inherit;<br />
+
+        The most common way to use the clear property is after you have used a float property on an element.<br />
+        When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. 
+      </div>  
+      
+      <div class="box" style="background-color:#f2dabd"><b>What is box-sizing?</b> <br />
+
+        While createing floating boxes side by side when you add something that enlarges the width of each box (e.g. padding or borders), the box will break. The box-sizing property allows us to include the padding and border in the box's total width (and height), making sure that the padding stays inside of the box and that it does not break.</div>
+      </div>
+    </div> 
+    <br><br><br><br>
+    <h4 style="padding-left:600px ;">The clearfix Hack</h4>
+    
+    <div style="background-color: rgb(233, 161, 161); height: 100px; width:60%; margin-left: 200px;">If an element is taller than the element containing it, and it is floated, it will "overflow" outside of its container:<br>
+      The new, modern clearfix hack however, is safer to use, and the following code is used for most webpages:<br>
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    </div> 
+  </body>
+</html>
